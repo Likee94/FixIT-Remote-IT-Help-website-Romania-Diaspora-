@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+	<link rel="icon" type="image/png" sizes="64x64" href="favicon.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="favicon.png">
+	<link rel="shortcut icon" href="favicon.png" type="image/png">
+
+  <meta charset="UTF-8">
+  <title>FixIT – Remote IT Help</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FixIT – rezolv rapid probleme IT remote pentru persoane fizice din România și diaspora. Outlook, Windows, VPN, imprimante, optimizare PC și gaming.">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #f4f4f4;
+      color: #222;
+    }
+    header {
+      background: #111;
+      color: #fff;
+      padding: 20px 0;
+    }
+    .container {
+      width: 95%;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .logo {
+      font-size: 26px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+    .logo span {
+      color: #00b894;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-right: 15px;
+      font-size: 14px;
+    }
+    nav a:hover { text-decoration: underline; }
+
+    .hero {
+      background: #181818;
+      color: #fff;
+      padding: 40px 0;
+    }
+    .hero-content {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 20px;
+    }
+    .hero-text {
+      flex: 1 1 300px;
+    }
+    .hero h1 {
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+    .hero p {
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+    .hero-badge {
+      display: inline-block;
+      background: #00b894;
+      color: #111;
+      padding: 4px 8px;
+      font-size: 12px;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+    .btn {
+      display: inline-block;
+      background: #00b894;
+      color: #111;
+      padding: 10px 18px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 4px;
+      margin-top: 10px;
+    }
+    .btn:hover { opacity: 0.9; }
+
+    .hero-box {
+      flex: 1 1 260px;
+      background: #222;
+      padding: 20px;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+    .hero-box h3 { margin-bottom: 10px; }
+
+    section {
+      padding: 30px 0;
+      background: #f4f4f4;
+    }
+    section:nth-of-type(even) {
+      background: #ffffff;
+    }
+    h2 {
+      margin-bottom: 15px;
+      font-size: 22px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 15px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 6px;
+      padding: 15px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      font-size: 14px;
+    }
+    .card h3 {
+      margin-bottom: 8px;
+      font-size: 16px;
+    }
+    .price {
+      font-weight: bold;
+      margin-top: 8px;
+      color: #00b894;
+    }
+    ul { margin-left: 18px; margin-top: 4px; }
+    li { margin-bottom: 3px; }
+
+    .how-steps {
+      counter-reset: step;
+    }
+    .how-steps li {
+      list-style: none;
+      margin-bottom: 10px;
+      padding-left: 32px;
+      position: relative;
+    }
+    .how-steps li::before {
+      counter-increment: step;
+      content: counter(step);
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: #00b894;
+      color: #111;
+      text-align: center;
+      line-height: 22px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    .highlight {
+      background: #fff;
+      border-left: 4px solid #00b894;
+      padding: 10px 12px;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background: #111;
+      color: #ccc;
+      padding: 20px 0;
+      font-size: 13px;
+      text-align: center;
+    }
+    footer a { color: #00b894; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 24px; }
+      .hero-box { font-size: 13px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <div class="logo">Fix<span>IT</span> – Remote IT Help</div>
+    <nav>
+      <a href="#services">Servicii</a>
+      <a href="#prices">Prețuri</a>
+      <a href="#how">Cum funcționează</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-content">
+    <div class="hero-text">
+      <div class="hero-badge">România & Diaspora – suport remote</div>
+      <h1>Probleme cu PC-ul, Windows, Outlook sau VPN?</h1>
+      <p>Rezolv rapid, remote, fără deplasare – explicat pe înțelesul tău, nu în termeni tehnici complicați.</p>
+      <p><strong>Disponibil după ora 18:00 și în weekend.</strong></p>
+      <a class="btn" href="https://wa.me/40745322943?text=Salut%2C+am+o+problema+IT">Scrie-mi pe WhatsApp</a>
+      <p style="margin-top:8px;font-size:12px;"> </p>
+    </div>
+    <div class="hero-box">
+      <h3>Rezolv frecvent:</h3>
+      <ul>
+        <li>Outlook / email nu funcționează</li>
+        <li>VPN / Remote Desktop nu se conectează</li>
+        <li>Windows cu erori, PC lent</li>
+        <li>Imprimante care nu vor să prindă rețeaua</li>
+        <li>Optimizare pentru gaming</li>
+      </ul>
+      <p class="price">Intervenții de la 20 € – plata după rezolvare.</p>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <h2>Servicii FixIT</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Rezolvări rapide (10–20 min)</h3>
+        <ul>
+          <li>Eroare Outlook / email</li>
+          <li>VPN nu se conectează</li>
+          <li>Microfon / cameră nu merg</li>
+          <li>Imprimantă nu mai imprimă</li>
+        </ul>
+        <div class="price">De la 20 €</div>
+      </div>
+      <div class="card">
+        <h3>Optimizare și curățare PC</h3>
+        <ul>
+          <li>PC lent – curățare și optimizare</li>
+          <li>Eliminare programe inutile</li>
+          <li>Verificare viruși / malware</li>
+        </ul>
+        <div class="price">30–50 €</div>
+      </div>
+      <div class="card">
+        <h3>Instalare Windows + drivere</h3>
+        <ul>
+          <li>Instalare Windows curat</li>
+          <li>Instalare drivere și update-uri</li>
+          <li>Instalare programe de bază</li>
+        </ul>
+        <div class="price">40–80 €</div>
+      </div>
+      <div class="card">
+        <h3>Outlook, Office, conturi</h3>
+        <ul>
+          <li>Configurare conturi de email</li>
+          <li>Reparare profil Outlook</li>
+          <li>Setări Office 365</li>
+        </ul>
+        <div class="price">30–50 €</div>
+      </div>
+      <div class="card">
+        <h3>Gaming & performanță</h3>
+        <ul>
+          <li>Optimizare pentru jocuri</li>
+          <li>Setări driver video</li>
+          <li>Analiză FPS / lag</li>
+        </ul>
+        <div class="price">30–60 €</div>
+      </div>
+      <div class="card">
+        <h3>Backup & date</h3>
+        <ul>
+          <li>Copiere fișiere importante</li>
+          <li>Organizare documente</li>
+          <li>Setare backup extern / cloud</li>
+        </ul>
+        <div class="price">30–70 €</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="prices">
+  <div class="container">
+    <h2>Prețuri orientative</h2>
+    <div class="highlight">
+      Prețul final este comunicat întotdeauna înainte de intervenție, în funcție de complexitate și timp.
+    </div>
+    <div class="grid">
+      <div class="card">
+        <h3>Rezolvări rapide</h3>
+        <p>Probleme ce se pot rezolva în 10–20 de minute.</p>
+        <ul>
+          <li>Eroare Outlook / email</li>
+          <li>VPN / Remote Desktop nu pornește</li>
+          <li>Probleme simple cu imprimanta</li>
+        </ul>
+        <div class="price">20 € (România)<br>25–30 € (Diaspora)</div>
+      </div>
+      <div class="card">
+        <h3>Intervenții medii</h3>
+        <p>20–40 de minute de lucru.</p>
+        <ul>
+          <li>Optimizare PC</li>
+          <li>Configurare Office / conturi</li>
+          <li>Setări router / rețea casnică</li>
+        </ul>
+        <div class="price">30–40 €</div>
+      </div>
+      <div class="card">
+        <h3>Servicii complexe</h3>
+        <p>45–90 de minute de lucru.</p>
+        <ul>
+          <li>Instalare Windows + drivere</li>
+          <li>Curățare viruși / malware</li>
+          <li>Proiecte speciale / consultanță</li>
+        </ul>
+        <div class="price">50–100 €</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="how">
+  <div class="container">
+    <h2>Cum funcționează</h2>
+    <ol class="how-steps">
+      <li>Îmi trimiți problema pe WhatsApp sau Messenger (text, poză sau poză cu eroarea).</li>
+      <li>Îți spun prețul fix și timpul estimat de rezolvare.</li>
+      <li>Ne conectăm remote (TeamViewer / AnyDesk) și rezolv problema.</li>
+      <li>După rezolvare, faci plata prin Revolut / PayPal / transfer.</li>
+    </ol>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <h2>Contact FixIT</h2>
+    <p><strong>Program:</strong> Luni–Vineri după 18:00, weekend flexibil (cu programare).</p>
+    <p><strong>WhatsApp:</strong> +40 745 322 943</p>
+    <p><strong>Email:</strong> peter.nemes22@gmail.com</p>
+    <p style="margin-top:10px;">Trimite-mi un mesaj cu problema ta și revin cu un răspuns cât mai rapid.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    FixIT – Remote IT Help &copy; <span id="year"></span>. Toate drepturile rezervate.
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
